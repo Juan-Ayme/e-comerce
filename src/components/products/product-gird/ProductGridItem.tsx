@@ -33,7 +33,7 @@ export const ProductGridItem  = ({product}:Props) => {
       />
       <div className='p-4 flex flex-col'>
         <Link
-          className='hover:text-blue-700'
+          className='hover:text-blue-700 rounded'
           href={`/product/${product.slug}`}>
           {product.title}
         </Link>
