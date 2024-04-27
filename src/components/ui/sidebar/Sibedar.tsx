@@ -36,7 +36,7 @@ export const Sibedar = () => {
         // todo: efecto de slide
          className={
             clsx(
-                " fixed p-5 right-0 top-0 md:w-[500px] sm:w-1/2 h-screen bg-white z-20 shadow-2xl transform transition-all duration-300",
+                " fixed p-5 right-0 top-0 max-w-[500px] h-screen bg-white z-20 shadow-2xl transform transition-all duration-300",
                 {
                     "translate-x-full": !isSideMenuOpen
                 }
