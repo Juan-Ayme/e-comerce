@@ -1,7 +1,9 @@
 'use client'
 
+import Link from 'next/link'
 import React from 'react'
-import { IoCloseOutline, IoSearchOutline } from 'react-icons/io5'
+import { IoCloseOutline, IoLogInOutline, IoLogOutOutline, IoPeopleOutline, IoPersonOutline, IoSearchOutline, IoShirtOutline, IoTicketOutline } from 'react-icons/io5'
+import { LinkSidebar } from './LinkSidebar';
 
 export const Sibedar = () => {
   return (
@@ -39,6 +41,50 @@ export const Sibedar = () => {
                     className='w-full bg-gray-50 rounded pl-10 py-1 border-b-2 text-xl border-gray-200 focus:outline-none focus:border-blue-500'
                     />
                 </div>
+
+                {/* Menu */}
+                <LinkSidebar
+                href='/'
+                Icon={IoPersonOutline}
+                texto='Perfil'
+                />
+
+                <LinkSidebar
+                href='/'
+                Icon={IoTicketOutline}
+                texto='Ordenes'
+                />
+
+                <LinkSidebar
+                href='/'
+                Icon={IoLogInOutline}
+                texto='Ingresar'
+                />
+
+                <LinkSidebar
+                href='/'
+                Icon={IoLogOutOutline}
+                texto='Salir'
+                />
+
+                {/** Line Separator o linea separadora */}
+                <div className='w-full h-px bg-gray-200 my-10'>
+                </div>
+                <LinkSidebar
+                href='/'
+                Icon={IoTicketOutline}
+                texto='Ordenes'
+                />
+                <LinkSidebar
+                href='/'
+                Icon={IoShirtOutline}
+                texto='Productos'
+                />
+                <LinkSidebar
+                href='/'
+                Icon={IoPeopleOutline}
+                texto='Usuarios'
+                />
         </nav>
     </div>
   )
