@@ -1,4 +1,4 @@
-import { Product } from "@/interfaces";
+import { Category, Product } from "@/interfaces";
 import { ProductGridItem } from "./ProductGridItem";
 
 interface Props{
@@ -7,9 +7,10 @@ interface Props{
 /**
  * Componente que muestra los productos en forma de grid o cuadricula
  */
-export const ProductGrid = ({products}:Props) => {
+export const ProductGrid = ({products}:Props,id:Category) => {
     // retorna un grid con los productos
   return (
+
     <div className="grid grid-cols-2 sm:grid-cols-3 gap-10 mb-10">
         {
             products.map(product =>(
