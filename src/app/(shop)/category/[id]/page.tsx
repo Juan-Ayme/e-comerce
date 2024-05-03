@@ -23,8 +23,6 @@ export default function AdminPage({params}:Props){
   //const selectType:ValidType = 'shirts';// tipo de producto
   const [selectTypes, setSelectTypes] = useState<ValidType[]>([]); // Cambia a un array
   const products = seedProducts.filter(product => product.gender === id && (selectTypes.length === 0 || selectTypes.includes(product.type))); // Ajusta la lógica de filtrado
-  console.log(products);
-  console.log(selectTypes);
 
   const titles:Record<Category,string> = {
     'men':'Hombres',
@@ -41,9 +39,11 @@ export default function AdminPage({params}:Props){
   if(id!== 'men' && id !=='women'){
     notFound();
   }
-  const handleTypeChange = (type: ValidType) => { // Ajusta la lógica de manejo de cambios
+  const typeChange = (type: ValidType) => { // Ajusta la lógica de manejo de cambios
     setSelectTypes(prevTypes =>
-      prevTypes.includes(type) ? prevTypes.filter(t => t !== type) : [...prevTypes, type]
+      prevTypes.includes(type)//Comprueba si el tipo ya está seleccionado (truo o false)
+      ? prevTypes.filter(t => t !== type)//(true) Si el tipo ya está seleccionado, lo elimina del array de selección o lo excluye del filtro
+      : [...prevTypes, type]//(false)Si no está seleccionado, lo añade al array de selección
     );
   };
 
@@ -62,19 +62,19 @@ export default function AdminPage({params}:Props){
             </Disclosure.Button>
             <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500">
               <div>
-                <input type="checkbox" id="pants" name="type" value="pants" checked={selectTypes.includes('pants')} onChange={() => handleTypeChange('pants')} />
+                <input type="checkbox" id="pants" name="type" value="pants" checked={selectTypes.includes('pants')} onChange={() => typeChange('pants')} />
                 <label htmlFor="pants">Pantalones</label>
               </div>
               <div>
-                <input type="checkbox" id="shirts" name="type" value="shirts" checked={selectTypes.includes('shirts')} onChange={() => handleTypeChange('shirts')} />
+                <input type="checkbox" id="shirts" name="type" value="shirts" checked={selectTypes.includes('shirts')} onChange={() => typeChange('shirts')} />
                 <label htmlFor="shirts">Camisas</label>
               </div>
               <div>
-                <input type="checkbox" id="hoodies" name="type" value="hoodies" checked={selectTypes.includes('hoodies')} onChange={() => handleTypeChange('hoodies')} />
+                <input type="checkbox" id="hoodies" name="type" value="hoodies" checked={selectTypes.includes('hoodies')} onChange={() => typeChange('hoodies')} />
                 <label htmlFor="hoodies">Sudaderas</label>
               </div>
               <div>
-                <input type="checkbox" id="hats" name="type" value="hats" checked={selectTypes.includes('hats')} onChange={() => handleTypeChange('hats')} />
+                <input type="checkbox" id="hats" name="type" value="hats" checked={selectTypes.includes('hats')} onChange={() => typeChange('hats')} />
                 <label htmlFor="hats">Sombreros</label>
               </div>
             </Disclosure.Panel>
