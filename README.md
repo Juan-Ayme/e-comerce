@@ -1,1 +1,1 @@
-Tienda Virtual para el Instituto la Pontificia 
+Tienda Virtual para el Instituto la Pontificia
