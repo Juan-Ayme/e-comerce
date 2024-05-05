@@ -28,7 +28,7 @@ export default function AdminPage({params}:Props){
       <PorductMobileSlideShow
       images={product.images}
       title={product.title}
-      className="block md:hidden"
+      className="block md:hidden "
       />
       {/**Desktop Slideshow*/}
       <PorductSlideShow
@@ -46,7 +46,7 @@ export default function AdminPage({params}:Props){
           <p className="text-lg mb-5">$ {product.price}</p>
           {/**Selector de tallas */}
           <SizeSelector
-            selectedSize={product.sizes[0]}
+            selectedSize={product.sizes[1]}
             availableSizes={product.sizes}
           />
           {/**Selector de cantidad */}

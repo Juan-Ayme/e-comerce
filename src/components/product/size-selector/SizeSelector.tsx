@@ -10,21 +10,22 @@ interface Props{
 export const SizeSelector = ({selectedSize,availableSizes}:Props) => {
 
     return (
-    <div className='my-5'>
+        <div className='my-5'>
         <h3 className='font-bold mb-4'>Tallas disponibles</h3>
         <div className='flex'>
             {
                 availableSizes.map(size => (
                     <button
                     key={size}
-                    className ={
+                    className = {
                         clsx(
-                            "mx-2 hover:underline text-lg",
+                            "mx-2 text-lg cursor-pointer transition-colors duration-200 ease-in-out rounded-full py-2 px-4",
                             {
-                                'underline':size === selectedSize
+                              'bg-blue-600 text-white hover:bg-blue-700': size === selectedSize,
+                              'bg-white border border-gray-300 text-gray-500 hover:bg-gray-200': size !== selectedSize
                             }
                         )
-                    }>
+                      }>
                         {size}
                     </button>
                 ))
