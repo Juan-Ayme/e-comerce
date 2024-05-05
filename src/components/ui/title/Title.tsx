@@ -5,7 +5,7 @@ interface Props{
     subtitle?: string;
     className?: string;
 }
-
+//se utiliza en la pagina de producto de cada genero o de acuerdo a la categoria de la tienda
 export const Title = ({title,subtitle,className}: Props) => {
   return (
     <div className={`mt-3 ${className}`}>
