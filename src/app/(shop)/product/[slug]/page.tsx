@@ -2,6 +2,7 @@ import { PorductSlideShow, QuantitySelector, SizeSelector } from "@/components";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
+import { PorductMobileSlideShow } from '../../../../components/product/slideshow/PorductMobileSlideShow';
 
 interface Props{
   params:{
@@ -23,16 +24,25 @@ export default function AdminPage({params}:Props){
 
     {/**Slide Show */}
      <div className="col-span-1 md:col-span-2 h-auto">
+      {/**Mobile Slideshow */}
+      <PorductMobileSlideShow
+      images={product.images}
+      title={product.title}
+      className="block md:hidden"
+      />
+      {/**Desktop Slideshow*/}
       <PorductSlideShow
         images={product.images}
         title={product.title}
-      />  
+        className="hidden md:block"
+      />
      </div>
 
      {/**Detalles */}
      <div className="col-span-1 px-5">
-        <h1 className={`${titleFont.className} antialiased font-bold text-xl`}></h1>
+        <h1 className={`${titleFont.className} antialiased font-bold text-xl`}>
           {product.title}
+        </h1>
           <p className="text-lg mb-5">$ {product.price}</p>
           {/**Selector de tallas */}
           <SizeSelector

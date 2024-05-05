@@ -10,3 +10,4 @@ export * from './product/size-selector/SizeSelector';// componente de seleccion 
 export * from './product/quantity-selector/QuantitySelector';// componente de seleccion de cantidad
 
 export *from './product/slideshow/PorductSlideShow';// componente de carrusel de productos
+export *from './product/slideshow/PorductMobileSlideShow';// componente de carrusel de productos para movil
