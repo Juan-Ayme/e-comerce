@@ -11,7 +11,7 @@ export const QuantitySelector = ({quantity}:Props) => {
     const[count,setCount] = useState(quantity);
 
     const onQuantityChange = (value:number) =>{
-        if(count + value < 1) return; //No se puede tener menos de 1 producto
+        if(count + value < 1) return; //Ingresa un valor mínimo de 1 no retorna nada
         setCount(count + value);
     }
 

@@ -22,12 +22,12 @@ export default function AdminPage({params}:Props){
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
      {/**Slide Show */}
 
-     <div className="col-span-1 md:col-span-2 bg-red-300">
+     <div className="col-span-1 md:col-span-2">
      hola
      </div>
 
      {/**Detalles */}
-     <div className="col-span-1 px-5 bg-blue-100">
+     <div className="col-span-1 px-5">
         <h1 className={`${titleFont.className} antialiased font-bold text-xl`}></h1>
           {product.title}
           <p className="text-lg mb-5">$ {product.price}</p>
@@ -38,7 +38,7 @@ export default function AdminPage({params}:Props){
           />
           {/**Selector de cantidad */}
           <QuantitySelector
-            quantity={2}
+            quantity={1}
           />
           {/**Boton agregar carrito */}
           <button className="btn-primary my-5">

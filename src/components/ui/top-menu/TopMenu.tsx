@@ -2,6 +2,7 @@
 
 import { titleFont } from "@/config/fonts";
 import { useUIStore } from "@/store";
+import Image from "next/image";
 import Link from "next/link";
 import { IoSearchOutline,IoCartOutline } from "react-icons/io5";
 
@@ -13,12 +14,11 @@ export const TopMenu = () =>{
 
             {/*Logo*/}
             <div>
-                <Link href="/">
-                    <span className={`${titleFont.className} antialiased font-bold`}>Pontificia</span>
-                    <span> | Tienda</span>
+                <Link href="/" >
+                        <span className={`${titleFont.className} antialiased font-bold text-blue-800`}>Pontificia</span>
+                        <span > | Tienda</span>
                 </Link>
             </div>
-
             {/*Center Menu*/}
             <div className="hidden sm:block">
                 <Link className="m-2 p-2 rounded-md transition-all hover:bg-gray-100" href="/category/men">Hombres</Link>
