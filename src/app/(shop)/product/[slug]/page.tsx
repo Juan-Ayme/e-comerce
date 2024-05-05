@@ -1,4 +1,4 @@
-import { QuantitySelector, SizeSelector } from "@/components";
+import { PorductSlideShow, QuantitySelector, SizeSelector } from "@/components";
 import { titleFont } from "@/config/fonts";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
@@ -20,10 +20,13 @@ export default function AdminPage({params}:Props){
 
   return (
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
-     {/**Slide Show */}
 
+    {/**Slide Show */}
      <div className="col-span-1 md:col-span-2">
-     hola
+      <PorductSlideShow
+        images={product.images}
+        title={product.title}
+      />
      </div>
 
      {/**Detalles */}

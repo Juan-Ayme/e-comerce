@@ -1,10 +1,12 @@
-export * from './ui/top-menu/TopMenu';
-export * from './ui/not-found/PageNotFound';
-export * from './ui/title/Title';
-export * from './ui/sidebar/Sibedar';
+export * from './ui/top-menu/TopMenu'; // componente de menu superior
+export * from './ui/not-found/PageNotFound'; // componente de pagina no encontrada
+export * from './ui/title/Title'; // componente de titulo
+export * from './ui/sidebar/Sibedar'; // componente de la barra lateral
 
-export * from './products/product-gird/ProductGrid';
-export * from './products/product-gird/ProductGridItem';
+export * from './products/product-gird/ProductGrid'; // componente de la grilla de productos
+export * from './products/product-gird/ProductGridItem';// componente de la tarjeta de producto
 
-export * from './product/size-selector/SizeSelector';
-export * from './product/quantity-selector/QuantitySelector';
+export * from './product/size-selector/SizeSelector';// componente de seleccion de talla
+export * from './product/quantity-selector/QuantitySelector';// componente de seleccion de cantidad
+
+export *from './product/slideshow/PorductSlideShow';// componente de carrusel de productos
