@@ -22,11 +22,11 @@ export default function AdminPage({params}:Props){
     <div className="mt-5 mb-20 grid grid-cols-1 md:grid-cols-3 gap-3">
 
     {/**Slide Show */}
-     <div className="col-span-1 md:col-span-2">
+     <div className="col-span-1 md:col-span-2 h-auto">
       <PorductSlideShow
         images={product.images}
         title={product.title}
-      />
+      />  
      </div>
 
      {/**Detalles */}

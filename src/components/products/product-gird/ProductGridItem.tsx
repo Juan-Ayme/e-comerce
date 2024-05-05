@@ -16,29 +16,27 @@ export const ProductGridItem  = ({product}:Props) => {
 
   return (
     <div className='rounded-md overflow-hidden fade-in'>
+      <Link href={`/product/${product.slug}`}>
       <Image
       alt='product'
       src={`/products/${displayImage}`}
       className='w-full object-cover'
-      width={500}
-      height={500}
+      width={450}
+      height={450}
       onMouseEnter={() => { // cambia la imagen al pasar el mouse
         setDisplayImage(product.images[1])
-      }
-    }
+      }}
       onMouseLeave={() => {// cambia la imagen al quitar el mouse
         setDisplayImage(product.images[0])
-      }
-    }
+      }}
       />
-      <div className='p-4 flex flex-col'>
-        <Link
-          className='hover:text-blue-700 rounded'
-          href={`/product/${product.slug}`}>
-          {product.title}
+      </Link>
+      <div className='p-4 flex flex-col '>
+        <Link href={`/product/${product.slug}`}>
+        <span className='hover:text-blue-700 rounded' >{product.title}</span>
         </Link>
         <span className='font-bold'>${product.price}</span>
       </div>
-      </div>
+    </div>
   )
 }
