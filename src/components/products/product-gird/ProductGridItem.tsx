@@ -6,16 +6,24 @@ import Link from 'next/link';
 import { Product } from '@/interfaces';
 import { useState } from 'react';
 
+interface Position {
+  x: number;
+  y: number;
+}
 interface Props{
     product: Product;
+    mousePosition: Position;
 }
 
-export const ProductGridItem  = ({product}:Props) => {
+
+export const ProductGridItem  = ({product,mousePosition}:Props) => {
 
   const [displayImage ,setDisplayImage] = useState(product.images[0]);// obtiene la primera imagen del producto
 
   return (
-    <div className='rounded-md overflow-hidden fade-in'>
+    <div className='rounded-md overflow-hidden fade-in' style={{
+      transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`
+    }}>
       <Link href={`/product/${product.slug}`}>
       <Image
       alt='product'

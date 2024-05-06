@@ -3,11 +3,16 @@ import { ProductGridItem } from "./ProductGridItem";
 
 interface Props{
     products: Product[];// arreglo de productos
+    mousePosition: Position;
 }
+interface Position {
+    x: number;
+    y: number;
+  }
 /**
  * Componente que muestra los productos en forma de grid o cuadricula
  */
-export const ProductGrid = ({products}:Props,id:Category) => {
+export const ProductGrid = ({products,mousePosition}:Props,id:Category) => {
     // retorna un grid con los productos
   return (
 
@@ -17,6 +22,7 @@ export const ProductGrid = ({products}:Props,id:Category) => {
                 <ProductGridItem
                  key={product.slug}
                  product={product}
+                mousePosition={mousePosition}
                 />
             ))
         }
