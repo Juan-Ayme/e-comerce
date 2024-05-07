@@ -1,5 +1,5 @@
 'use client'
-import { ProductGrid, Title } from "@/components";
+import {Footer, ProductGrid, Title} from "@/components";
 import { initialData } from "@/seed/seed";
 import { useState,MouseEvent } from "react";
 
@@ -15,15 +15,16 @@ export default function Home() {
     setMousePosition({ x: event.clientX, y: event.clientY });
   };
   return (
-    <div onMouseMove={handleMouseMove}>
-      <Title
-        title="Tienda"
-        subtitle="Todos los productos"
-      />
-      <ProductGrid
-        products={products}
-        mousePosition={mousePosition}
-      />
-    </div>
+      <div onMouseMove={handleMouseMove}>
+          <Title
+              title="Tienda"
+              subtitle="Todos los productos"
+          />
+          <ProductGrid
+              products={products}
+              mousePosition={mousePosition}
+          />
+          <Footer/>
+      </div>
   );
 }
