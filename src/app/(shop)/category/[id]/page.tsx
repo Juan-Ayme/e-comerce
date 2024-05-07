@@ -5,7 +5,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 import { Category, ValidType } from "@/interfaces";
 import { initialData } from "@/seed/seed";
 import { notFound } from "next/navigation";
-import { useState } from "react";
+import {MouseEvent, useState} from "react";
 
 //el props es para recibir los parametros de la url
 
@@ -17,8 +17,16 @@ interface Props{
   }
 }
 
-export default function AdminPage({params}:Props){
+interface Position {
+  x: number;
+  y: number;
+}
 
+export default function AdminPage({params}:Props,position:Position) {
+  const [mousePosition, setMousePosition] = useState<Position>({ x: 0, y: 0 });
+  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
+    setMousePosition({ x: event.clientX, y: event.clientY });
+  };
   const {id} = params;
   //const selectType:ValidType = 'shirts';// tipo de producto
   const [selectTypes, setSelectTypes] = useState<ValidType[]>([]); // Cambia a un array
@@ -48,7 +56,7 @@ export default function AdminPage({params}:Props){
   };
 
   return (
-    <>
+    <div onMouseMove={handleMouseMove}>
       <Title
         title={`Articulos de ${titles[id]}`}// se obtendra el genero de acuerdo al id como llave
         subtitle={subtitles[id]}
@@ -84,7 +92,8 @@ export default function AdminPage({params}:Props){
 
       <ProductGrid
         products={products}
+        mousePosition={mousePosition}
       />
-    </>
+    </div>
   );
 }
