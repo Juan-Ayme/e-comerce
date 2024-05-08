@@ -3,6 +3,7 @@ import { initialData } from "@/seed/seed";
 import Image from "next/image";
 import Link from "next/link";
 import { SlArrowLeftCircle, SlTrash } from "react-icons/sl";
+import {redirect} from "next/navigation";
 
 const productInCart =[
   initialData.products[0],
@@ -11,17 +12,20 @@ const productInCart =[
 ]
 
 export default function AdminPage(){
+
+    //redirect('/empty'); si no hay productos en el carrito
+
   return (
     <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
-      
+
       <div className="flex flex-col w-[1000px]">
         <Title title="Carrito"/>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {/**Carrrito */}
             <div className="flex flex-col mt-5">
               <span className="text-xl mb-4 ">Agregar mas items</span>
-              
+
               <Link href="/" className="mb-5 flex items-center mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-500 ease-in-out">
               <SlArrowLeftCircle className="w-6 h-6 mr-2" />
               <span>Continua comprando</span>
@@ -65,10 +69,10 @@ export default function AdminPage(){
 
                   <span className="font-medium">Subtotal</span>
                   <span className="text-right">$100 </span>
-                  
+
                   <span className="font-medium">Impuestos (15%) </span>
                   <span className="text-right">$100 articulos</span>
-                  
+
                   <span className="mt-5 text-2xl font-bold">Total:</span>
                   <span className="mt-5 text-2xl text-right font-bold">$100 </span>
                 </div>

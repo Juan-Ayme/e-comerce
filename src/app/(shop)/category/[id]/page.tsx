@@ -64,26 +64,26 @@ export default function AdminPage({params}:Props,position:Position) {
       <Disclosure>
         {({ open }) => (
           <>
-            <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-black bg-white rounded-lg hover:bg-gray-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+            <Disclosure.Button className="mb-2 flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-black bg-gray-200 rounded-lg hover:bg-blue-500 hover:text-white focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
               <span>Filtrar por tipo</span>
-              <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-black`}/>
+              <ChevronDownIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-black `}/>
             </Disclosure.Button>
             <Disclosure.Panel className="px-4 pt-4 pb-2 text-gray-500">
               <div>
                 <input type="checkbox" id="pants" name="type" value="pants" checked={selectTypes.includes('pants')} onChange={() => typeChange('pants')} />
-                <label htmlFor="pants">Pantalones</label>
+                <label htmlFor="pants" className="px-1">Pantalones</label>
               </div>
               <div>
                 <input type="checkbox" id="shirts" name="type" value="shirts" checked={selectTypes.includes('shirts')} onChange={() => typeChange('shirts')} />
-                <label htmlFor="shirts">Camisas</label>
+                <label htmlFor="shirts" className="px-1">Camisas</label>
               </div>
               <div>
                 <input type="checkbox" id="hoodies" name="type" value="hoodies" checked={selectTypes.includes('hoodies')} onChange={() => typeChange('hoodies')} />
-                <label htmlFor="hoodies">Sudaderas</label>
+                <label htmlFor="hoodies" className="px-1">Sudaderas</label>
               </div>
-              <div>
+              <div  >
                 <input type="checkbox" id="hats" name="type" value="hats" checked={selectTypes.includes('hats')} onChange={() => typeChange('hats')} />
-                <label htmlFor="hats">Sombreros</label>
+                <label htmlFor="hats" className="px-1">Sombreros</label>
               </div>
             </Disclosure.Panel>
           </>

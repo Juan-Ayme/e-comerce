@@ -15,8 +15,6 @@ N
 src/app/(shop)/orders/page.tsx,f\8\f8830b11a3792f46fbe8a6807ad546224f1d0b7e
 V
 &src/app/(shop)/product/[slug]/page.tsx,a\b\ab599a935c62e2d143bb2161bbeb747884566e76
-N
-src/app/(shop)/legal/Legal.tsx,6\a\6ab9e32c52ac9204037f31773d7cacd3eba510f1
 G
 src/components/index.ts,0\b\0b1c4105b7145ce4f9e5d21dfe3f33c3a5921a58
 S
@@ -25,3 +23,5 @@ M
 src/app/(shop)/legal/Page.tsx,d\e\de720192420d4f091f201d75ae5d9921f9d53401
 M
 src/app/(shop)/legal/page.tsx,a\6\a67f0b293ba281ee2a7711d480d01275bc9ed422
+M
+src/app/(shop)/empty/page.tsx,b\a\bacf657229b7e059fa4614a7d11738b21dd37eb3
