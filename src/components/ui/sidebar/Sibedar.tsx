@@ -64,7 +64,7 @@ export const Sibedar = () => {
 
                 {/* Menu */}
                 <LinkSidebar
-                href='/'
+                href='/auth/login'
                 Icon={IoPersonOutline}
                 texto='Perfil'
                 />

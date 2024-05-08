@@ -61,7 +61,7 @@ export default function AdminPage(){
             </div>
 
             {/**Checkout - Resumen de orden*/}
-            <div className="bg-white rounded-xl shadow-xl p-7 flex flex-col items-center justify-center">
+            <div className=" bg-white rounded-xl shadow-xl p-7 flex flex-col items-center justify-center h-fit">
                 <h2 className="text-2xl mb-5 font-semibold">Resumen de orden</h2>
                 <div className="grid grid-cols-2 gap-y-4 w-full">
                   <span className="font-medium">Nº Productos </span>
@@ -76,7 +76,7 @@ export default function AdminPage(){
                   <span className="mt-5 text-2xl font-bold">Total:</span>
                   <span className="mt-5 text-2xl text-right font-bold">$100 </span>
                 </div>
-                <div className="mt-5 mb-2 w-full">
+                <div className="mt-5 mb-3 w-full px-5">
                   <Link
                     href="/checkout/address"
                     className="flex btn-primary justify-center items-center py-2 rounded text-white bg-blue-500 hover:bg-blue-700 transition duration-500 ease-in-out"

@@ -25,3 +25,23 @@ M
 src/app/(shop)/legal/page.tsx,a\6\a67f0b293ba281ee2a7711d480d01275bc9ed422
 M
 src/app/(shop)/empty/page.tsx,b\a\bacf657229b7e059fa4614a7d11738b21dd37eb3
+I
+src/app/(shop)/layout.tsx,f\3\f32d1dd5783665e5c93f4b9340d0799bf6456b85
+U
+%src/components/ui/sidebar/Sibedar.tsx,3\5\35073cab2dfd27390dd87b849d865c911983e664
+S
+#src/app/(shop)/institution/Page.tsx,4\9\49bb514f8fe0f00643e45835b9e98dd79d4d68d5
+S
+#src/app/(shop)/institution/page.tsx,e\f\ef6d0886b6c42d6fd685daa0cb0768e0d25283fb
+b
+2src/app/(shop)/institution/policy-privacy/Page.tsx,9\5\95a4d62ba208276e1f4ab8b86e224c2d0975c616
+b
+2src/app/(shop)/institution/policy-privacy/page.tsx,8\4\84b49d4a4fe6e33b6f28718c1a0e908847420005
+K
+src/app/auth/login/page.tsx,7\d\7dc7780474b5ff2477b802653cfbb711876b165c
+G
+src/app/auth/layout.tsx,d\1\d1641045a973675ce406c26c544756a33b8ff965
+Y
+)src/components/ui/sidebar/LinkSidebar.tsx,a\b\ab24edbd2ac7e6157084c6724a3a56d78bc4d0dc
+Q
+!src/app/auth/new-account/page.tsx,e\5\e5aa6486b700aab20b4165ef30c25d91b7d8dbc7

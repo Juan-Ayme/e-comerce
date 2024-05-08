@@ -24,7 +24,6 @@ export default function Home() {
               products={products}
               mousePosition={mousePosition}
           />
-          <Footer/>
       </div>
   );
 }

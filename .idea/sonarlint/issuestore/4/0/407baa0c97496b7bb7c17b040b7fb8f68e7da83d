@@ -1,2 +1,3 @@
 
-ætypescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ìá¸Ç8ŞÓ˜õ1
+Itypescript:S1128"&Remove this unused import of 'Footer'.(Òí¸8‚Í½Àõ1
+Œtypescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ìá¸Ç8ŞÓ˜õ1J$3eb97008-00b4-4c09-9e58-bbfe009029ca

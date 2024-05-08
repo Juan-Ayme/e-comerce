@@ -83,8 +83,8 @@ export default function AdminPage(){
                         <div className="mt-5 mb-2 w-full">
 
                             {/*Disclainer*/}
-                            <p className="text-xs text-gray-500 mb-5">Al hacer clic en el botón de abajo, aceptas nuestros <Link href="/legal" className="text-blue-700 underline"
-                            >términos y condiciones</Link>  y <Link href="/legal" className="text-blue-700 underline"
+                            <p className="text-xs text-gray-500 mb-5">Al hacer clic en el botón de abajo, aceptas nuestros <Link href="/institution/terms-conditions" className="text-blue-700 underline"
+                            >términos y condiciones</Link>  y <Link href="/institution/policy-privacy" className="text-blue-700 underline"
                             >politica de privacidad</Link></p>
 
 

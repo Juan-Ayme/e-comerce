@@ -1,4 +1,4 @@
-import { Sibedar, TopMenu } from "@/components";
+import {Footer, Sibedar, TopMenu} from "@/components";
 
 export default function ShopLayout({children}:
     {children: React.ReactNode;}) {
@@ -9,6 +9,7 @@ export default function ShopLayout({children}:
       <div className="px-1 sm:px-5">
         {children}
       </div>
+        <Footer/>
     </main>
   );
 }
