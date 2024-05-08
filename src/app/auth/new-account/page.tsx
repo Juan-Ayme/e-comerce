@@ -42,7 +42,7 @@ export default function NewAccount() {
                 <Link
                     href="/auth/new-account"
                     className="btn-secondary text-center">
-                    Crear una nueva cuenta
+                    Ingresar
                 </Link>
 
             </div>
