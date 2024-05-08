@@ -1,4 +1,4 @@
 
-…typescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(Þðú»J$87968a3c-42b6-44c0-a0ff-8fdf92e57a7e
-¡typescript:S1082"_Visible, non-interactive elements with click handlers must have at least one keyboard listener.(Þðú»J$9938f9d2-905c-4041-a817-4ed7578cb55b
-{typescript:S1135$"4Complete the task associated to this "TODO" comment.(×òÃñüÿÿÿÿJ$416d8faf-2bb3-4057-90b3-135f191fdbb9
+…typescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(Þðú»J$57b14fed-ddb9-4079-a07c-de3f783c9718
+¡typescript:S1082"_Visible, non-interactive elements with click handlers must have at least one keyboard listener.(Þðú»J$7368dd15-545d-4774-ac2d-646cecea8f99
+{typescript:S1135$"4Complete the task associated to this "TODO" comment.(×òÃñüÿÿÿÿJ$5931f7a5-88b0-4430-9d82-195ba55ac53d

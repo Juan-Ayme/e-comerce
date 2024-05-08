@@ -70,7 +70,7 @@ export const Sibedar = () => {
                 />
 
                 <LinkSidebar
-                href='/'
+                href='/orders'
                 Icon={IoTicketOutline}
                 texto='Ordenes'
                 />
