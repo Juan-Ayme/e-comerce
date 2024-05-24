@@ -30,7 +30,7 @@ model Category {
 }
 
 model Product {
-  id          String   @id @default(uuid())
+  id          String   @id @default(uuid()) // esta es la primary key
   title       String
   description String? // ? significa que es opcional
   inStock     Int
@@ -40,8 +40,18 @@ model Product {
   tags        String[] @default([])
   gender      Gender
 
-  category   Category @relation(fields: [categoryId], references: [id])
-  categoryId String
+  category     Category       @relation(fields: [categoryId], references: [id])
+  categoryId   String
+  // relacion de uno a muchos con la tabla ProductImage
+  ProductImage ProductImage[]
 
   @@index([gender])
+}
+
+model ProductImage {
+  id  Int    @id @default(autoincrement()) // autoincrement es para que se auto incremente
+  url String
+
+  product    Product @relation(fields: [productoId], references: [id]) // relacion de muchos a uno con la tabla Product
+  productoId String
 }
