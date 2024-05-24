@@ -20,10 +20,6 @@ G
 S
 #src/components/ui/footer/Footer.tsx,d\7\d713e8a7d34a5d6b8a40b5bb11b6a08dbda6e1ec
 M
-src/app/(shop)/legal/Page.tsx,d\e\de720192420d4f091f201d75ae5d9921f9d53401
-M
-src/app/(shop)/legal/page.tsx,a\6\a67f0b293ba281ee2a7711d480d01275bc9ed422
-M
 src/app/(shop)/empty/page.tsx,b\a\bacf657229b7e059fa4614a7d11738b21dd37eb3
 I
 src/app/(shop)/layout.tsx,f\3\f32d1dd5783665e5c93f4b9340d0799bf6456b85
@@ -45,3 +41,16 @@ Y
 )src/components/ui/sidebar/LinkSidebar.tsx,a\b\ab24edbd2ac7e6157084c6724a3a56d78bc4d0dc
 Q
 !src/app/auth/new-account/page.tsx,e\5\e5aa6486b700aab20b4165ef30c25d91b7d8dbc7
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+M
+src/app/(shop)/admin/page.tsx,e\f\ef051c27d4106f1ea702f82c055f3c95a4c826c5
+=
+.env.template,c\b\cba580618a52ae1531e8a3a2da7595593afd602d
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+D
+prisma/schema.prisma,1\8\187e4a6f168cf143dde68ce28a29ae08ce9b9578
+@
+src/seed/seed.ts,e\d\edb1110a04771f60e7a60b52082b8b1c11f6ccde
