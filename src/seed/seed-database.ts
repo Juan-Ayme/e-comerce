@@ -22,14 +22,32 @@ async function main(){
         data:categoriesData
     });
 
+    // 3. Obtener las categorias de la base de datos
     const categoriesDB = await prisma.category.findMany();
 
+    // 4. Crear un mapa de categorias
     const categoriesMap =  categoriesDB.reduce((map,category)=>{
 
         map[category.name.toLowerCase()] = category.id;
 
         return map;
     },{} as Record<string, string>); // <string = shirt , string = categoryID>
+
+
+    const {images,type,...producto1} = products[0];
+
+    products.forEach(async product=>{
+        const {type,images,...rest} = product;
+
+        const dbProduct = await prisma.product.create({
+            data:{
+                ...rest,
+                categoryId: categoriesMap[type]
+            }
+        })
+    })
+
+
     console.log(categoriesMap);
 }
 
