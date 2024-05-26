@@ -6,21 +6,27 @@ import {initialData} from "@/seed/seed";
 //const products = initialData.products; // obtiene los productos de la semilla del archivo seed.ts
 
 
-export default async function Home() {
+interface Props{
+    searchParams:{
+        page?: string;
+    }
+}
 
+export default async function Home({searchParams}:Props) {
 
-  const { products }  = await getPaginatedProductsWithImages();
+    const page = searchParams.page ? parseInt(searchParams.page): 1;
 
-  console.log(products)
-  return (
-      <div >
-          <Title
-              title="Tienda"
-              subtitle="Todos los productos"
-          />
-          <ProductGrid
-              products={products}
-          />
-      </div>
-  );
+    const { products }  = await getPaginatedProductsWithImages({page});
+
+    return (
+        <div >
+            <Title
+                title="Tienda"
+                subtitle="Todos los productos"
+            />
+            <ProductGrid
+                products={products}
+            />
+        </div>
+    );
 }
