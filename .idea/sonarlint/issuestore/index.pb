@@ -70,3 +70,9 @@ G
 src/interfaces/index.ts,2\e\2e33a2b1111eede51ef856d45c0ecfc7868ba2a1
 A
 src/lib/prisma.ts,c\d\cd21019e0b0022c129983862d28ff953b89d788a
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+4
+.env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+=
+next-env.d.ts,7\9\7948598afd6f2aa542f1b55d7b6f077a70937e77
