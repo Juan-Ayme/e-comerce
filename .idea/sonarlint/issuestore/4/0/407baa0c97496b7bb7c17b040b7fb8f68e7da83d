@@ -1,3 +1,4 @@
 
-Itypescript:S1128"&Remove this unused import of 'Footer'.(Òí¸8‚Í½Àõ1
-Œtypescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ìá¸Ç8ŞÓ˜õ1J$3eb97008-00b4-4c09-9e58-bbfe009029ca
+otypescript:S1128"&Remove this unused import of 'Footer'.(Òí¸8†Ùÿ©û1J$de3101d7-cf6f-4a00-8174-5966d60d2ef0
+ƒtypescript:S1854":Remove this useless assignment to variable "productsTemp".(›¥àì8‡Ùÿ©û1J$cdb9bde5-a01d-4eb0-a8cc-6644be4ef82b
+Œtypescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ìá¸Ç8‰Ùÿ©û1J$003ae13a-3c36-4d12-80af-f6cb9b0d179e
