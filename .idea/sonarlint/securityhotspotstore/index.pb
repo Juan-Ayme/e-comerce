@@ -80,3 +80,5 @@ Y
 )src/actions/product/product-pagination.ts,a\2\a28c07d1fd02f0b8840f4a4675108b3649757e64
 D
 src/actions/index.ts,3\2\32680745e481452e39b1f7ef0419131e74ff8fef
+h
+8src/components/products/product-gird/ProductGridItem.tsx,6\b\6b079e00373a143e39343507163837be4cec9dcc

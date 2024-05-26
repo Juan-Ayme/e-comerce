@@ -1,33 +1,25 @@
-'use client'
-import {Footer, ProductGrid, Title} from "@/components";
-import { initialData } from "@/seed/seed";
-import { useState,MouseEvent } from "react";
+import { ProductGrid, Title} from "@/components";
+
 import {getPaginatedProductsWithImages} from "@/actions";
+import {initialData} from "@/seed/seed";
 
-const products = initialData.products; // obtiene los productos de la semilla del archivo seed.ts
+//const products = initialData.products; // obtiene los productos de la semilla del archivo seed.ts
 
-interface Position {
-  x: number;
-  y: number;
-}
+
 export default async function Home() {
-    //Animacion de mouse
-  const [mousePosition, setMousePosition] = useState<Position>({ x: 0, y: 0 });
-  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
-    setMousePosition({ x: event.clientX, y: event.clientY });
-  };
 
-  const productsTemp = await getPaginatedProductsWithImages();
 
+  const { products }  = await getPaginatedProductsWithImages();
+
+  console.log(products)
   return (
-      <div onMouseMove={handleMouseMove}>
+      <div >
           <Title
               title="Tienda"
               subtitle="Todos los productos"
           />
           <ProductGrid
               products={products}
-              mousePosition={mousePosition}
           />
       </div>
   );

@@ -1,4 +1,3 @@
 
-otypescript:S1128"&Remove this unused import of 'Footer'.(Òí¸8†Ùÿ©û1J$de3101d7-cf6f-4a00-8174-5966d60d2ef0
-ƒtypescript:S1854":Remove this useless assignment to variable "productsTemp".(›¥àì8‡Ùÿ©û1J$cdb9bde5-a01d-4eb0-a8cc-6644be4ef82b
-Œtypescript:S6848"ÂAvoid non-native interactive elements. If using native HTML is not possible, add an appropriate role and support for tabbing, mouse, keyboard, and touch inputs to an interactive content element.(ìá¸Ç8‰Ùÿ©û1J$003ae13a-3c36-4d12-80af-f6cb9b0d179e
+ytypescript:S1128"+Remove this unused import of 'initialData'.(‚èú«ıÿÿÿÿ8¤ñÚªû1J$906ac708-00ab-4849-b28a-2d214c69f0d3
+gtypescript:S125"Remove this commented out code.(Â¦íÓ8¤ñÚªû1J$ba5e7337-cfa5-4575-84d0-d58378501061
