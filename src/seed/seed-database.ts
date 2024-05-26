@@ -4,12 +4,10 @@ import prisma from "../lib/prisma";
 async function main(){
 
     // 1. borrar todos los datos de la base de datos
-    await Promise.all([
-        await prisma.productImage.deleteMany(),
-        await prisma.product.deleteMany(),
-        await prisma.category.deleteMany(),
-        ]
-    );
+    
+        await prisma.productImage.deleteMany();
+        await prisma.product.deleteMany();
+        await prisma.category.deleteMany();
 
     const {categories,products} = initialData;
     //Categorias
@@ -36,20 +34,30 @@ async function main(){
 
     const {images,type,...producto1} = products[0];
 
-    products.forEach(async product=>{
-        const {type,images,...rest} = product;
+    for (const product of products) {//products es un array de productos
 
-        const dbProduct = await prisma.product.create({
+        const {type,images,...rest} = product; //rest es un objeto con todas las propiedades del producto menos type e images
+
+        const dbProduct = await prisma.product.create({// se crea un producto en la base de datos
             data:{
                 ...rest,
                 categoryId: categoriesMap[type]
             }
         })
-    })
 
+        // 5. Imagenes de productos
+        const imagesData = images.map(image =>({
+            url:image,
+            productoId: dbProduct.id
+        }));
 
-    console.log(categoriesMap);
-}
+        await prisma.productImage.createMany({
+            data: imagesData
+        });
+        
+    }
+    };
+
 
 main().catch(err => {
     console.error("Error ejecutando el seed:", err);
