@@ -82,3 +82,5 @@ D
 src/actions/index.ts,3\2\32680745e481452e39b1f7ef0419131e74ff8fef
 h
 8src/components/products/product-gird/ProductGridItem.tsx,6\b\6b079e00373a143e39343507163837be4cec9dcc
+[
++src/components/ui/pagination/Pagination.tsx,1\e\1e38621b296914cb1bfd6ebf51ca0ce3989d2a4e

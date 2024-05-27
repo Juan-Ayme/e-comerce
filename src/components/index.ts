@@ -3,6 +3,7 @@ export * from './ui/not-found/PageNotFound'; // componente de pagina no encontra
 export * from './ui/title/Title'; // componente de titulo
 export * from './ui/sidebar/Sibedar'; // componente de la barra lateral
 export * from './ui/footer/Footer'; // componente de pie de pagina
+export * from './ui/pagination/Pagination'; // componente de paginacion
 
 export * from './products/product-gird/ProductGrid'; // componente de la grilla de productos
 export * from './products/product-gird/ProductGridItem';// componente de la tarjeta de producto
