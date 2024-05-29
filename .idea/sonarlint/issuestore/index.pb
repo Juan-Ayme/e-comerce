@@ -84,3 +84,7 @@ h
 8src/components/products/product-gird/ProductGridItem.tsx,6\b\6b079e00373a143e39343507163837be4cec9dcc
 [
 +src/components/ui/pagination/Pagination.tsx,1\e\1e38621b296914cb1bfd6ebf51ca0ce3989d2a4e
+V
+&src/utils/generatePaginationNumbers.ts,f\b\fbebca1ae3a9a30dccfe4ff04fe3e8a6f212ea85
+B
+src/utils/index.ts,0\c\0cc957a5bbd31d0d6029a0eb5dd2b84ad8f9ef09
