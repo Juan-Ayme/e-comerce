@@ -1,4 +1,5 @@
 
-ytypescript:S1128"+Remove this unused import of 'initialData'.(‚èú«ıÿÿÿÿ8şÒÏû1J$91ad58b4-2f1a-41cf-812a-f4b445c66726
-gtypescript:S125"Remove this commented out code.(Â¦íÓ8şÒÏû1J$d81b421a-bbd1-4d07-b212-517cbb9c64de
-{typescript:S6759"-Mark the props of the component as read-only.(½üĞŞûÿÿÿÿ8ŸşÒÏû1J$30832c17-047c-47eb-aa56-1ddc6ab419f9
+ytypescript:S1128"+Remove this unused import of 'initialData'.(‚èú«ıÿÿÿÿ8şÒÏû1J$664848b8-282f-4527-bd91-e6d13e5a4de3
+gtypescript:S125"Remove this commented out code.(Â¦íÓ8şÒÏû1J$86e4f742-52b0-43e0-99f6-5f9bd12e9c90
+{typescript:S6759"-Mark the props of the component as read-only.(½üĞŞûÿÿÿÿ8ŸşÒÏû1J$6466efb5-2396-4779-8de4-9376ec71fe1d
+atypescript:S1854"9Remove this useless assignment to variable "currentPage".(¬´†Üÿÿÿÿÿ8ü‚¶ü1
